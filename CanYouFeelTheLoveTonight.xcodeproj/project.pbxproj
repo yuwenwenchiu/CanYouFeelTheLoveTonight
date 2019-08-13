@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810B6F9923019D0A0068CA60 /* Lyrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810B6F9823019D0A0068CA60 /* Lyrics.swift */; };
 		81305BC822FD460D0008515F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81305BC722FD460D0008515F /* AppDelegate.swift */; };
 		81305BCA22FD460D0008515F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81305BC922FD460D0008515F /* ViewController.swift */; };
 		81305BCD22FD460D0008515F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81305BCB22FD460D0008515F /* Main.storyboard */; };
 		81305BCF22FD460E0008515F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81305BCE22FD460E0008515F /* Assets.xcassets */; };
 		81305BD222FD460E0008515F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81305BD022FD460E0008515F /* LaunchScreen.storyboard */; };
+		81305BDB22FD48A50008515F /* simbaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81305BD922FD48A50008515F /* simbaCell.swift */; };
+		81305BDC22FD48A50008515F /* simbaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81305BDA22FD48A50008515F /* simbaCell.xib */; };
+		81305BDF22FD48F70008515F /* nalaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81305BDD22FD48F70008515F /* nalaCell.swift */; };
+		81305BE022FD48F70008515F /* nalaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81305BDE22FD48F70008515F /* nalaCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		810B6F9823019D0A0068CA60 /* Lyrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lyrics.swift; sourceTree = "<group>"; };
 		81305BC422FD460D0008515F /* CanYouFeelTheLoveTonight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanYouFeelTheLoveTonight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81305BC722FD460D0008515F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81305BC922FD460D0008515F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,10 @@
 		81305BCE22FD460E0008515F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81305BD122FD460E0008515F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81305BD322FD460E0008515F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81305BD922FD48A50008515F /* simbaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simbaCell.swift; sourceTree = "<group>"; };
+		81305BDA22FD48A50008515F /* simbaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = simbaCell.xib; sourceTree = "<group>"; };
+		81305BDD22FD48F70008515F /* nalaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nalaCell.swift; sourceTree = "<group>"; };
+		81305BDE22FD48F70008515F /* nalaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = nalaCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		810B6F9D230313430068CA60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				810B6F9823019D0A0068CA60 /* Lyrics.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		810B6F9E230313500068CA60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81305BD922FD48A50008515F /* simbaCell.swift */,
+				81305BDD22FD48F70008515F /* nalaCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		810B6F9F2303136F0068CA60 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				81305BC922FD460D0008515F /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		81305BBB22FD460D0008515F = {
 			isa = PBXGroup;
 			children = (
@@ -55,8 +90,12 @@
 			isa = PBXGroup;
 			children = (
 				81305BC722FD460D0008515F /* AppDelegate.swift */,
-				81305BC922FD460D0008515F /* ViewController.swift */,
 				81305BCB22FD460D0008515F /* Main.storyboard */,
+				81305BDA22FD48A50008515F /* simbaCell.xib */,
+				81305BDE22FD48F70008515F /* nalaCell.xib */,
+				810B6F9D230313430068CA60 /* Model */,
+				810B6F9E230313500068CA60 /* View */,
+				810B6F9F2303136F0068CA60 /* ViewController */,
 				81305BCE22FD460E0008515F /* Assets.xcassets */,
 				81305BD022FD460E0008515F /* LaunchScreen.storyboard */,
 				81305BD322FD460E0008515F /* Info.plist */,
@@ -123,7 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				81305BD222FD460E0008515F /* LaunchScreen.storyboard in Resources */,
+				81305BE022FD48F70008515F /* nalaCell.xib in Resources */,
 				81305BCF22FD460E0008515F /* Assets.xcassets in Resources */,
+				81305BDC22FD48A50008515F /* simbaCell.xib in Resources */,
 				81305BCD22FD460D0008515F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				81305BCA22FD460D0008515F /* ViewController.swift in Sources */,
+				810B6F9923019D0A0068CA60 /* Lyrics.swift in Sources */,
+				81305BDB22FD48A50008515F /* simbaCell.swift in Sources */,
 				81305BC822FD460D0008515F /* AppDelegate.swift in Sources */,
+				81305BDF22FD48F70008515F /* nalaCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

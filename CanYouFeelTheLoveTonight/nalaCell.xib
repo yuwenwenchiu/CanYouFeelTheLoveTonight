@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="nanaCell" customModule="CanYouFeelTheLoveTonight" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nala" translatesAutoresizingMaskIntoConstraints="NO" id="zRx-mG-Z8M">
+                        <rect key="frame" x="260" y="15" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="75" id="1Tg-fq-Tai"/>
+                            <constraint firstAttribute="width" constant="75" id="wjL-x4-H9x"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="37.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWQ-8E-qht">
+                        <rect key="frame" x="164" y="15" width="81" height="64"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="text" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="bQE-mG-yXP">
+                                <rect key="frame" x="15" y="15" width="36" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97924000020000002" green="0.87504202129999997" blue="0.83920806650000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="bQE-mG-yXP" firstAttribute="trailing" secondItem="wWQ-8E-qht" secondAttribute="trailing" constant="-30" id="ORf-KF-lF4"/>
+                            <constraint firstItem="bQE-mG-yXP" firstAttribute="leading" secondItem="wWQ-8E-qht" secondAttribute="leading" constant="15" id="P1u-aA-fOY"/>
+                            <constraint firstItem="bQE-mG-yXP" firstAttribute="top" secondItem="wWQ-8E-qht" secondAttribute="top" constant="15" id="Vcp-rx-fJZ"/>
+                            <constraint firstAttribute="height" secondItem="bQE-mG-yXP" secondAttribute="height" constant="30" id="tRs-5c-Apj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="wWQ-8E-qht" firstAttribute="trailing" secondItem="zRx-mG-Z8M" secondAttribute="leading" constant="-15" id="A3B-uz-xLb"/>
+                    <constraint firstItem="wWQ-8E-qht" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Hug-aU-5BD"/>
+                    <constraint firstItem="zRx-mG-Z8M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Ikc-FS-Fpm"/>
+                    <constraint firstItem="wWQ-8E-qht" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="bottom" constant="-15" id="Luj-Lm-D1W"/>
+                    <constraint firstItem="zRx-mG-Z8M" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailing" constant="-15" id="ZkN-e4-QBT"/>
+                    <constraint firstItem="wWQ-8E-qht" firstAttribute="top" secondItem="zRx-mG-Z8M" secondAttribute="top" id="ljP-gh-XGZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="wWQ-8E-qht" id="QzA-6Q-w7t"/>
+                <outlet property="nalaTextView" destination="bQE-mG-yXP" id="uPM-af-yUP"/>
+            </connections>
+            <point key="canvasLocation" x="159.42028985507247" y="109.15178571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Nala" width="1688" height="1688"/>
+    </resources>
+</document>
